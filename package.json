@@ -1,0 +1,80 @@
+{
+  "name": "@webpractik/oxlint-config",
+  "version": "1.0.0",
+  "description": "Oxlint config",
+  "keywords": [
+    "oxlint-config"
+  ],
+  "homepage": "https://github.com/webpractik/oxlint-config",
+  "bugs": {
+    "url": "https://github.com/webpractik/oxlint-config/issues"
+  },
+  "license": "MIT",
+  "author": "Egor Penhasov <e.penhasov@webpractik.ru>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpractik/oxlint-config.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./custom-plugins/prefer-early-return": "./dist/custom-plugins/prefer-early-return.mjs",
+    "./custom-plugins/prefer-template": "./dist/custom-plugins/prefer-template.mjs",
+    "./custom-plugins/sonarjs": "./dist/custom-plugins/sonarjs.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown --clean --dts",
+    "fmt": "oxfmt",
+    "lint": "oxlint",
+    "prepack": "nr build",
+    "release": "bumpp",
+    "typecheck": "tsc --noEmit",
+    "watch": "tsdown --watch"
+  },
+  "dependencies": {
+    "@oxlint/plugins": "^1.80.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint-plugin-de-morgan": "^2.1.3",
+    "eslint-plugin-no-only-tests": "^3.4.0",
+    "eslint-plugin-perfectionist": "^5.10.1",
+    "eslint-plugin-regexp": "^3.2.0",
+    "eslint-plugin-sonarjs": "^4.2.0"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^30.5.0",
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/node": "^24.13.3",
+    "bumpp": "^12.2.2",
+    "eslint-plugin-better-tailwindcss": "^4.7.0",
+    "eslint-plugin-slop": "^0.1.2",
+    "eslint-plugin-storybook": "^10.6.0",
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.80.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "tsdown": "^0.22.14",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "eslint-plugin-better-tailwindcss": "^4.7.0",
+    "eslint-plugin-slop": "^0.1.2",
+    "eslint-plugin-storybook": "^10.5.0",
+    "oxlint": "^1.80.0",
+    "oxlint-tsgolint": "^7.0.2001"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-storybook": {
+      "optional": true
+    },
+    "eslint-plugin-better-tailwindcss": {
+      "optional": true
+    },
+    "eslint-plugin-slop": {
+      "optional": true
+    }
+  }
+}
