@@ -15,12 +15,16 @@
     "type": "git",
     "url": "git+https://github.com/webpractik/oxlint-config.git"
   },
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "types": "./dist/index.d.mts",
   "exports": {
-    ".": "./src/index.ts",
-    "./custom-plugins/prefer-early-return": "./src/custom-plugins/prefer-early-return.ts",
-    "./custom-plugins/prefer-template": "./src/custom-plugins/prefer-template.ts",
-    "./custom-plugins/sonarjs": "./src/custom-plugins/sonarjs.ts",
+    ".": "./dist/index.mjs",
+    "./custom-plugins/prefer-early-return": "./dist/custom-plugins/prefer-early-return.mjs",
+    "./custom-plugins/prefer-template": "./dist/custom-plugins/prefer-template.mjs",
+    "./custom-plugins/sonarjs": "./dist/custom-plugins/sonarjs.mjs",
     "./package.json": "./package.json"
   },
   "scripts": {
