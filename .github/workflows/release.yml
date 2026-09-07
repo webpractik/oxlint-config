@@ -12,7 +12,7 @@ jobs:
 
     permissions:
       contents: write
-      id-token: write
+      packages: write
 
     steps:
       - name: Checkout
@@ -30,7 +30,8 @@ jobs:
         with:
           node-version: lts/*
           package-manager-cache: false
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@webpractik'
 
       - name: Install dependencies
         shell: bash
@@ -42,5 +43,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # - name: Publish to NPM
-      #   run: npm publish --access public
+      - name: Publish to GitHub Packages
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
