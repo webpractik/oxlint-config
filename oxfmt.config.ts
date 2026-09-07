@@ -1,7 +1,6 @@
 import { defineConfig } from 'oxfmt'
 
 export default defineConfig({
-  jsdoc: true,
   printWidth: 100,
   semi: false,
   singleQuote: true,

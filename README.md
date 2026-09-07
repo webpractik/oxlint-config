@@ -10,7 +10,7 @@
 - **Автоопределение стека**: TypeScript, React, Next.js, Storybook подключаются сами, если найдены соответствующие зависимости.
 - **Type-aware правила** TypeScript включаются одной опцией `tsconfigPath` (через `oxlint-tsgolint`).
 - Форматирование не входит в конфиг — за него отвечает `oxfmt`, поэтому нет конфликтов «линтер против форматтера».
-- Большой набор предподключённых плагинов: `typescript`, `import`, `unicorn`, `oxc`, `promise`, `node`, `jsdoc`, `regexp`, `perfectionist`, `@stylistic`, `de-morgan`, `sonarjs`, `vitest`, `no-only-tests`, `react`, `nextjs`, `jsx-a11y`, `better-tailwindcss`, `storybook`, `slop`.
+- Большой набор предподключённых плагинов: `typescript`, `import`, `unicorn`, `oxc`, `promise`, `node`, `regexp`, `perfectionist`, `@stylistic`, `de-morgan`, `sonarjs`, `vitest`, `no-only-tests`, `react`, `nextjs`, `jsx-a11y`, `better-tailwindcss`, `storybook`, `slop`.
 - Несколько собственных плагинов oxlint: `prefer-early-return`, `prefer-template`, `sonarjs`.
 - Часть шумных в редакторе правил автоматически глушится при запуске из IDE.
 - Каждый блок правил можно точечно включить, выключить или переопределить.
@@ -150,7 +150,6 @@ export default defineConfig({
 | `regexp`        | `boolean \| object` (`true`)                          | Плагин `regexp`.                                                     |
 | `promise`       | `boolean` (`true`)                                    | Плагин `promise`.                                                    |
 | `node`          | `boolean` (`true`)                                    | Правила Node.js.                                                     |
-| `jsdoc`         | `boolean` (`true`)                                    | Правила JSDoc.                                                       |
 | `deMoragn`      | `boolean` (`true`)                                    | Плагин `de-morgan`.                                                  |
 | `oxc`           | `boolean \| object` (`true`)                          | Правила плагина `oxc`.                                               |
 | `test`          | `boolean \| object` (`true`)                          | Правила `vitest` + `no-only-tests` для тестовых файлов.              |

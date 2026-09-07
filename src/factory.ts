@@ -9,7 +9,6 @@ import {
   ignores,
   imports,
   javascript,
-  jsdoc,
   jsxA11y,
   nextjs,
   node,
@@ -50,7 +49,6 @@ export function defineOxlintConfig(
     deMoragn: enableDeMorgan = true,
     ignores: userIgnores = [],
     imports: enableImports = true,
-    jsdoc: enableJsdoc = true,
     jsxA11y: enablejsxA11y = false,
     nextjs: enableNextjs = hasNextJs(),
     node: enableNode = true,
@@ -102,10 +100,6 @@ export function defineOxlintConfig(
 
   if (enableNode) {
     configs.push(node())
-  }
-
-  if (enableJsdoc) {
-    configs.push(jsdoc())
   }
 
   if (enableImports) {

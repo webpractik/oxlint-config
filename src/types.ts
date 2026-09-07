@@ -135,13 +135,6 @@ export interface OptionsConfig extends OptionsProjectType {
   javascript?: OptionsOverrides
 
   /**
-   * Enable JSDoc rules
-   *
-   * @default true
-   */
-  jsdoc?: boolean
-
-  /**
    * Enable JSX accessibility rules.
    *
    * Can be a boolean or an object for custom options and overrides.
