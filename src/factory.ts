@@ -25,7 +25,7 @@ import {
   typescript,
   unicorn,
 } from './configs/index.ts'
-import { hasNextJs, hasReact, hasStorybook, hasTypeScript, isInEditorEnv } from './env.ts'
+import { hasNextJs, hasReact, hasTypeScript, isInEditorEnv } from './env.ts'
 import { combine } from './utils.ts'
 
 const configProps = [
@@ -58,7 +58,7 @@ export function defineOxlintConfig(
     react: enableReact = hasReact(),
     regexp: enableRegexp = true,
     sonarjs: enableSonarJs = true,
-    storybook: enableStorybook = hasStorybook(),
+    storybook: enableStorybook = false,
     tailwindcss: enableTailwindcss = false,
     test: enableTest = true,
     type: appType = 'app',

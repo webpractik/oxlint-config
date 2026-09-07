@@ -203,7 +203,7 @@ export interface OptionsConfig extends OptionsProjectType {
    *
    * Requires installing: - `eslint-plugin-storybook`
    *
-   * @default auto-detect based on the dependencies
+   * @default false
    */
   storybook?: boolean | OptionsOverrides
 
