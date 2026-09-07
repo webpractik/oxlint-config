@@ -42,6 +42,7 @@
     "eslint-plugin-no-only-tests": "^3.4.0",
     "eslint-plugin-perfectionist": "^5.10.1",
     "eslint-plugin-regexp": "^3.2.0",
+    "eslint-plugin-slop": "^0.1.2",
     "eslint-plugin-sonarjs": "^4.2.0"
   },
   "devDependencies": {
@@ -50,7 +51,6 @@
     "@types/node": "^24.13.3",
     "bumpp": "^12.2.2",
     "eslint-plugin-better-tailwindcss": "^4.7.0",
-    "eslint-plugin-slop": "^0.1.2",
     "eslint-plugin-storybook": "^10.6.0",
     "oxfmt": "^0.65.0",
     "oxlint": "^1.80.0",
@@ -60,7 +60,6 @@
   },
   "peerDependencies": {
     "eslint-plugin-better-tailwindcss": "^4.7.0",
-    "eslint-plugin-slop": "^0.1.2",
     "eslint-plugin-storybook": "^10.5.0",
     "oxlint": "^1.80.0",
     "oxlint-tsgolint": "^7.0.2001"
@@ -70,9 +69,6 @@
       "optional": true
     },
     "eslint-plugin-better-tailwindcss": {
-      "optional": true
-    },
-    "eslint-plugin-slop": {
       "optional": true
     }
   }

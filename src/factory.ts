@@ -45,7 +45,7 @@ export function defineOxlintConfig(
   ...userConfigs: OxlintConfig[]
 ): OxlintConfig {
   const {
-    antislop: enableAntislop = false,
+    antislop: enableAntislop = true,
     deMoragn: enableDeMorgan = true,
     ignores: userIgnores = [],
     imports: enableImports = true,

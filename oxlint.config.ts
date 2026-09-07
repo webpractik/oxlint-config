@@ -1,5 +1,3 @@
 import { defineOxlintConfig } from './src/factory.ts'
 
-export default defineOxlintConfig({
-  antislop: true,
-})
+export default defineOxlintConfig()

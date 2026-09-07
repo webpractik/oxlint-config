@@ -91,12 +91,10 @@ export interface OptionsConfig extends OptionsProjectType {
   /**
    * Enable rules from `eslint-plugin-slop`.
    *
-   * Requires installing: - `eslint-plugin-slop`
-   *
    * Passing an object enables the rules and forwards it to the plugin via `settings.slop`,
    * controlling the working directory and inspection mode.
    *
-   * @default false
+   * @default true
    * @see https://github.com/antfu/eslint-plugin-slop
    */
   antislop?: boolean | OptionsAntislop
