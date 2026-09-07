@@ -37,9 +37,20 @@ jobs:
         shell: bash
         run: bun install --frozen-lockfile
 
+      - name: Build
+        run: bun run build
+
       - name: Generate GitHub Changelog
         run: bunx changelogithub
-        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pack tarball
+        id: pack
+        run: echo "file=$(npm pack | tail -1)" >> "$GITHUB_OUTPUT"
+
+      - name: Upload tarball to release
+        run: gh release upload "$GITHUB_REF_NAME" "${{ steps.pack.outputs.file }}" --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
