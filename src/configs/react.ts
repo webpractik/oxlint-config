@@ -92,7 +92,7 @@ export function react(options: OptionsFiles & OptionsOverrides = {}): OxlintConf
           'react/void-dom-elements-no-children': 'error',
 
           /* React hooks */
-          'react/exhaustive-deps': 'error',
+          'react/exhaustive-deps': 'warn',
           'react/rules-of-hooks': 'error',
 
           /* React compiler */
