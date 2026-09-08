@@ -59,7 +59,7 @@ export function defineOxlintConfig(
     regexp: enableRegexp = true,
     sonarjs: enableSonarJs = true,
     storybook: enableStorybook = false,
-    tailwindcss: enableTailwindcss = false,
+    tailwindcss: enableTailwindcss = true,
     test: enableTest = true,
     type: appType = 'app',
     typescript: enableTypeScript = hasTypeScript(),

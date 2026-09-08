@@ -42,7 +42,13 @@ export interface OptionsStylistic {
 }
 
 export interface OptionsTailwindCSS extends OptionsOverrides {
-  entryPoint: string
+  /**
+   * Path to the CSS entry point where Tailwind is imported.
+   *
+   * Optional, but strongly recommended: without it `better-tailwindcss`
+   * can't resolve the project's Tailwind config, and a warning is emitted.
+   */
+  entryPoint?: string
 }
 
 export interface OptionsAntislop extends OptionsOverrides {
@@ -218,11 +224,12 @@ export interface OptionsConfig extends OptionsProjectType {
   /**
    * Enable tailwindcss rules.
    *
-   * Requires installing: - `eslint-plugin-better-tailwindcss`
+   * Pass an object with `entryPoint` so `better-tailwindcss` can resolve
+   * the project's Tailwind config; set to `false` for non-Tailwind projects.
    *
-   * @default false
+   * @default true
    */
-  tailwindcss?: OptionsTailwindCSS | false
+  tailwindcss?: boolean | OptionsTailwindCSS
 
   /**
    * Enable test support.

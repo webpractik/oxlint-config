@@ -1,3 +1,5 @@
 import { defineOxlintConfig } from './src/factory.ts'
 
-export default defineOxlintConfig()
+export default defineOxlintConfig({
+  tailwindcss: false,
+})

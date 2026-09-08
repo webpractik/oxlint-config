@@ -9,6 +9,10 @@ export function tailwindcss(
 ): OxlintConfig {
   const { entryPoint, overrides = {}, stylistic = true, tsconfigPath } = options
 
+  if (entryPoint == null) {
+    console.warn('[@webpractik/oxlint-config] Tailwindcss config requires entryPoint.')
+  }
+
   const {
     indent = 'tab',
     printWidth = 100,
