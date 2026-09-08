@@ -130,29 +130,29 @@ export default defineConfig({
 
 Все опции необязательны. Значение `по умолчанию` в скобках.
 
-| Опция           | Тип                                                   | Описание                                                         |
-| --------------- | ----------------------------------------------------- | ---------------------------------------------------------------- |
-| `type`          | `'app' \| 'lib'` (`'app'`)                            | Для `lib` включает `explicit-function-return-type`.              |
-| `typescript`    | `boolean \| object` (автоопределение по `typescript`) | Правила TS. Объект с `tsconfigPath` включает type-aware линтинг. |
-| `react`         | `boolean \| object` (автоопределение по `react`)      | Правила React.                                                   |
-| `nextjs`        | `boolean \| object` (автоопределение по `next`)       | Правила Next.js.                                                 |
-| `storybook`     | `boolean \| object` (автоопределение по `storybook`)  | Требует `eslint-plugin-storybook`.                               |
-| `tailwindcss`   | `boolean \| object` (`true`)                          | Правила `tailwindcss`. Рекомендуется задать `entryPoint`.        |
-| `antislop`      | `boolean \| object` (`false`)                         | Правила `eslint-plugin-slop` против «AI-шума».                   |
-| `jsxA11y`       | `boolean \| object` (`false`)                         | Правила доступности JSX.                                         |
-| `stylistic`     | `boolean \| object` (`true`)                          | Стилистические правила `@stylistic` (не заменяют `oxfmt`).       |
-| `imports`       | `boolean \| object` (`true`)                          | Плагин `import`.                                                 |
-| `unicorn`       | `boolean \| object` (`true`)                          | Плагин `unicorn`.                                                |
-| `perfectionist` | `boolean \| object` (`true`)                          | Сортировка объектов/импортов и т.д.                              |
-| `sonarjs`       | `boolean \| object` (`true`)                          | Собственный плагин `sonarjs`.                                    |
-| `regexp`        | `boolean \| object` (`true`)                          | Плагин `regexp`.                                                 |
-| `promise`       | `boolean` (`true`)                                    | Плагин `promise`.                                                |
-| `node`          | `boolean` (`true`)                                    | Правила Node.js.                                                 |
-| `deMorgan`      | `boolean` (`true`)                                    | Плагин `de-morgan`.                                              |
-| `oxc`           | `boolean \| object` (`true`)                          | Правила плагина `oxc`.                                           |
-| `test`          | `boolean \| object` (`true`)                          | Правила `vitest` + `no-only-tests` для тестовых файлов.          |
-| `isInEditor`    | `boolean` (автоопределение)                           | Глушит часть правил при запуске из IDE.                          |
-| `ignores`       | `string[] \| (originals) => string[]` (`[]`)          | Расширить/изменить глобальные игноры.                            |
+| Опция           | Тип                                                    | Описание                                                         |
+| --------------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
+| `type`          | `'app' \| 'lib'` (`'app'`)                             | Для `lib` включает `explicit-function-return-type`.              |
+| `typescript`    | `boolean \| object` (автоопределение по `typescript`)  | Правила TS. Объект с `tsconfigPath` включает type-aware линтинг. |
+| `react`         | `boolean \| object` (автоопределение по `react`)       | Правила React.                                                   |
+| `nextjs`        | `boolean \| object` (автоопределение по `next`)        | Правила Next.js.                                                 |
+| `storybook`     | `boolean \| object` (автоопределение по `storybook`)   | Требует `eslint-plugin-storybook`.                               |
+| `tailwindcss`   | `boolean \| object` (автоопределение по `tailwindcss`) | Правила `tailwindcss`. Рекомендуется задать `entryPoint`.        |
+| `antislop`      | `boolean \| object` (`false`)                          | Правила `eslint-plugin-slop` против «AI-шума».                   |
+| `jsxA11y`       | `boolean \| object` (`false`)                          | Правила доступности JSX.                                         |
+| `stylistic`     | `boolean \| object` (`true`)                           | Стилистические правила `@stylistic` (не заменяют `oxfmt`).       |
+| `imports`       | `boolean \| object` (`true`)                           | Плагин `import`.                                                 |
+| `unicorn`       | `boolean \| object` (`true`)                           | Плагин `unicorn`.                                                |
+| `perfectionist` | `boolean \| object` (`true`)                           | Сортировка объектов/импортов и т.д.                              |
+| `sonarjs`       | `boolean \| object` (`true`)                           | Собственный плагин `sonarjs`.                                    |
+| `regexp`        | `boolean \| object` (`true`)                           | Плагин `regexp`.                                                 |
+| `promise`       | `boolean` (`true`)                                     | Плагин `promise`.                                                |
+| `node`          | `boolean` (`true`)                                     | Правила Node.js.                                                 |
+| `deMorgan`      | `boolean` (`true`)                                     | Плагин `de-morgan`.                                              |
+| `oxc`           | `boolean \| object` (`true`)                           | Правила плагина `oxc`.                                           |
+| `test`          | `boolean \| object` (`true`)                           | Правила `vitest` + `no-only-tests` для тестовых файлов.          |
+| `isInEditor`    | `boolean` (автоопределение)                            | Глушит часть правил при запуске из IDE.                          |
+| `ignores`       | `string[] \| (originals) => string[]` (`[]`)           | Расширить/изменить глобальные игноры.                            |
 
 ## Переопределение правил
 

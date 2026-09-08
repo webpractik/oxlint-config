@@ -227,7 +227,7 @@ export interface OptionsConfig extends OptionsProjectType {
    * Pass an object with `entryPoint` so `better-tailwindcss` can resolve
    * the project's Tailwind config; set to `false` for non-Tailwind projects.
    *
-   * @default true
+   * @default auto-detect based on the dependencies
    */
   tailwindcss?: boolean | OptionsTailwindCSS
 

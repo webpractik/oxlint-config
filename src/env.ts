@@ -11,6 +11,7 @@ export const hasTypeScript = (): boolean => isPackageExists('typescript')
 export const hasVite = (): boolean => isPackageExists('vite')
 export const hasReact = (): boolean => isPackageExists('react')
 export const hasNextJs = (): boolean => isPackageExists('next')
+export const hasTailwindcss = (): boolean => isPackageExists('tailwindcss')
 
 export function isInEditorEnv(): boolean {
   if (process.env.CI) {
