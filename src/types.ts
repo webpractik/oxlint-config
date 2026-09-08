@@ -110,7 +110,7 @@ export interface OptionsConfig extends OptionsProjectType {
    *
    * @default true
    */
-  deMoragn?: boolean
+  deMorgan?: boolean
 
   /**
    * Extend the global ignores.

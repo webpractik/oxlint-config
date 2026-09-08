@@ -46,7 +46,7 @@ export function defineOxlintConfig(
 ): OxlintConfig {
   const {
     antislop: enableAntislop = true,
-    deMoragn: enableDeMorgan = true,
+    deMorgan: enableDeMorgan = true,
     ignores: userIgnores = [],
     imports: enableImports = true,
     jsxA11y: enablejsxA11y = false,

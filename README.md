@@ -148,7 +148,7 @@ export default defineConfig({
 | `regexp`        | `boolean \| object` (`true`)                          | Плагин `regexp`.                                                 |
 | `promise`       | `boolean` (`true`)                                    | Плагин `promise`.                                                |
 | `node`          | `boolean` (`true`)                                    | Правила Node.js.                                                 |
-| `deMoragn`      | `boolean` (`true`)                                    | Плагин `de-morgan`.                                              |
+| `deMorgan`      | `boolean` (`true`)                                    | Плагин `de-morgan`.                                              |
 | `oxc`           | `boolean \| object` (`true`)                          | Правила плагина `oxc`.                                           |
 | `test`          | `boolean \| object` (`true`)                          | Правила `vitest` + `no-only-tests` для тестовых файлов.          |
 | `isInEditor`    | `boolean` (автоопределение)                           | Глушит часть правил при запуске из IDE.                          |
