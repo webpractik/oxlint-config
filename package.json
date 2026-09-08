@@ -31,7 +31,7 @@
     "build": "tsdown --clean --dts",
     "fmt": "oxfmt",
     "lint": "oxlint",
-    "release": "bumpp",
+    "release": "bumpp --pr",
     "typecheck": "tsc --noEmit",
     "watch": "tsdown --watch"
   },
