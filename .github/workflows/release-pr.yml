@@ -60,7 +60,9 @@ jobs:
         run: bun run build
 
       - name: Generate GitHub Changelog
-        run: bunx changelogithub
+        run: |
+          git fetch origin "refs/tags/v${{ steps.version.outputs.version }}"
+          bunx changelogithub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
